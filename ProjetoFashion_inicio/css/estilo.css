@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffcfc;
+    margin: 0;
+}
+
+.logo {
+    background-image: url(/ProjetoFashion_inicio/imagens/topo.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center left;
+    border-top: 1px solid transparent;
+}
+
+.logo nav ul {
+    text-align: right;
+    margin: 0 0 0 0;
+    background-color: #081a24;
+
+    padding-right: 25px;
+
+}
+
+.logo nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+    border: 1px solid transparent;
+
+}
+
+.logo nav a {
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    color: #08525d;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.logo nav a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#romero {
+    float: left;
+    
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+
+}
+.content-card{
+    width: 80%;
+}
+.card-1,
+.card-2 {
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+    display: block;
+    
+}
+.card p{
+   
+    color: rgb(73, 72, 72);
+    margin: 0;
+    padding: 10px;
+    
+}
+
+.content-secondtext {
+    background-image: url(/ProjetoFashion_inicio/imagens/bg_detalhe.png);
+    height: 1000px;
+
+    background-size: cover;
+    background-position: bottom right;
+    border-top: 1px solid transparent;
+    background-repeat: no-repeat;
+    clear: both;
+}
+
+.artic h1 {
+    font-family: Arial, sans-serif;
+
+
+    font-size: 50px;
+    padding-left: 0%;
+    padding-top: 5%;
+    padding-right: 0%;
+
+    text-align: center;
+}
+
+.artic p {
+    color: rgb(68, 68, 68);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 15%;
+    padding-top: 0%;
+    padding-right: 15%;
+    padding-bottom: 7%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.articulo p {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 50%;
+    float: left;
+    text-align: left;
+}
+
+.articulo h1 {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 25%;
+    float: left;
+    text-align: left;
+}
+
+.content-contact {
+
+    color: #023c54;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: rgb(5, 0, 0);
+    height: 70px;
+
+}
+
+.final p {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #024968;
+    padding-top: 25px;
+}
