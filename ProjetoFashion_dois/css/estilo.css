@@ -47,10 +47,11 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 5px;
+    transition: color 0.3s linear;
 }
 
 .navegacao a:hover {
-    color: #023c54;
+    color: white;
 }
 
 .card {
@@ -82,7 +83,8 @@ body {
     padding: 10px;
 
 }
-.imagens{
+
+.imagens {
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 4px;
@@ -93,26 +95,32 @@ body {
 .content-secondtext {
     background-image: url(/ProjetoFashion_inicio/imagens/bg_detalhe.png);
     padding: 100px;
-    background-color: #003d58;
-   
+    background-color: #023c54;
+
     background-position: right bottom;
-    
+
     background-repeat: no-repeat;
     clear: both;
 }
-.content-secondtext p{
-    color: rgb(238, 6, 6);
+
+.content-secondtext p {
+    color: white;
     line-height: 1.5;
-    width: 50%;
-    padding-left: 5%;
-    
-    float: left;
+    width: 70%;
+
+}
+
+.content-secondtext h2 {
+    color: white;
+    text-transform: uppercase;
     text-align: left;
+    font-size: 50px;
+    font-weight: normal;
 }
 
 .artic h1 {
     font-size: 36px;
-    padding: 5% 0% 0% 0% ;
+    padding: 5% 0% 0% 0%;
 
     color: rgb(68, 68, 68);
     text-align: center;
@@ -122,27 +130,13 @@ body {
     color: rgb(68, 68, 68);
 
     font-size: 20px;
-   padding-bottom: 50px;
+    padding-bottom: 50px;
     line-height: 2;
     text-align: center;
 }
 
-.articulo p {
 
-  
-}
 
-.articulo h1 {
-
-    text-transform: uppercase;
-    
-    font-size: 50px;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-right: 25%;
-    float: left;
-    text-align: left;
-}
 
 .content-contact {
 
