@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+    <style>
+
+    </style>
+    <title>pagina de formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="#" method="post" class="formLogin">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="#">Email</label>
+            <input type="email" required placeholder="Digite um e-mail válido">
+            <label>numero de filhos</label>
+            <input type="number" min="0" max="1000" >
+            <!-- Para valores que não podem ser menor que 0 -->
+            <br>
+            <label for="#">nascimento</label>
+            <input type="date" min="2018-01-30" max="20138-01-30">
+            <br>
+            <p>Genero:</p>
+            <label> <input type="radio" name="genero" value="M">
+                Masculino</label name="genero">
+            <!-- Colocar o label como no caso do masculino
+            faz com que clicar na palavra também funcione como
+            clicar no botão -->
+            <input type="radio" name="genero" value="F">
+            <label>Feminino</label name="genero">
+            <br>
+            <!-- nunca usar br na prática,
+             foi usado aqui so pra ganhar tempo -->
+                <input type="hidden" name="expira" value="2023-04-21">
+            <label>Estado</label>
+            <select name="estado" id="#">
+                <option value="0">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </fieldset>
+        <fieldset>
+
+            <legend>Área de interesse</legend>
+            <label> <input type="checkbox" name="html" value="html">HTML
+            </label>
+            <label> <input type="checkbox" name="css" value="css">CSS
+            </label>
+            <label> <input type="checkbox" name="JS" value="JS">Javascript
+            </label>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Mensagem</legend>
+            <!-- maxlength pra determinar o tamanho maximo do texto -->
+            <textarea style="resize: none" name="msg" cols="50" rows="10" maxlength="5"></textarea>
+            <!-- O ideal é usar o CSS para editar o textarea -->
+            <textarea style="resize: none" name="msg" cols="50" rows="10" readonly>Aqui entra o texto do contrato que precisa ser aceito
+            </textarea>
+        
+            <label><input type="checkbox">Li e aceito</label>
+        
+        <input type="range" min="0" max="10" step="2" >
+        <input type="time" >
+        <input type="color" >
+
+            <select multiple>
+                <option>opcao 1</option>
+                <option>opcao 2</option>
+                <option>opcao 3</option>
+                <option>opcao 4</option>
+                <option>opcao 5</option>
+            </select>
+            <select multiple size="5">
+                <option>opcao 1</option>
+                <option>opcao 2</option>
+                <option>opcao 3</option>
+                <option>opcao 4</option>
+                <option>opcao 5</option>
+            </select>
+
+        </fieldset>
+
+
+
+
+        <br>
+        <input type="submit" value="mandar">
+        <input type="button" value="button">
+        <!-- Bottão para ser tratado com JS -->
+        <input type="reset" value="reset">
+
+    </form>
+</body>
+
+</html>
