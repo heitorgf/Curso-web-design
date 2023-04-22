@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom left, red, transparent),
+             linear-gradient(to right top, blue 900px, transparent);
+             /* Da para usar imagem na mesma função das cores, porem usando o url() 
+             também é possivel usar graos no lugar do Bottom left */
+        }
+
+        #radius {
+            background: orange;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 25px 100px 50px 0 /20px 50px 20px 0;
+            box-shadow: -10px 10px 10px 0 #23a6c7, 10px 10px 0 green;
+        }
+
+        /* A propriedade border radius serve para arredondar as coisas */
+        /* O que fica a esquerda da barra é o eixo X e o que fica esquerda é o eixo Y */
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: -1px 1px 0 #5d5d5d,
+                -2px 2px 0 #727272, -3px 3px 0 #868686,
+                -4px 4px 0 #858484;
+        }
+    </style>
+    <title>pagina de exemplo</title>
+</head>
+
+<body>
+    <h1>CSS efeitos</h1>
+    <div id="radius"></div>
+</body>
+
+</html>
