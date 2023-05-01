@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+<head>
+    <title>pseudoclasse</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+<style>
+    input[type="checkbox"]{
+        width: 50px;
+        height: 50px;
+    }
+    input[type="checkbox"]:checked{
+        width: 100px;
+        height: 100px;
+    }
+    button:disabled{
+        background-color: aquamarine;
+    }
+    p{color: red;}
+    p:empty::before{
+        content: "Paragrafo vazio";
+    }
+    input[type="text"]:focus{
+        background: #cccc;
+    }
+    a:focus, a:hover, div:focus{
+        background: red;
+    }
+    input::placeholder{
+                color: red
+            }
+</style>
+    
+</head>
+<body>
+<label><input type="checkbox" value="sim">Sim aceito o contrato</label>
+<button>vai</button>
+<button disabled>volta</button>
+<p>paragrafo 1</p>
+<p> </p> <!-- A pseudoclasse empty não vai pegar paragrafos que tem espaço -->
+<p></p>
+<hr>
+<input type="text">
+<ul>
+    <li><a href="#">Link vazio</a></li>
+    <li><a href="#">Link vazio</a></li>
+    <li><a href="#">Link vazio</a></li>
+    <li><a href="#">Link vazio</a></li>
+</ul>
+<div tabindex="1">div1</div>
+<div tabindex="2">div2</div>
+<div tabindex="3">div3</div>
+<input type="text">
+<input type="text" value="valor inicial">
+<input type="text" value="valor inicial" readonly>
+<input type="text" value="valor inicial" disabled>
+<input type="text" placeholder="valor do placeholder">
+</body>
+</html>
