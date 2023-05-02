@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+<head>
+    <title>pseudoclasse</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+<style>
+  div p:nth-of-type(3){
+    color: red;
+  }
+/* Terceira child do tipo "p". Apenas para tags e não para classes. */
+.destaque{
+    background-color: #dddd;
+}
+.destaque:nth-child(7){
+    color: green;
+}
+.destaque:first-child{
+    color: blue;
+}
+p:last-child{
+    text-align: center;
+}
+
+</style>
+    
+</head>
+<body>
+
+<div>
+    <p class="destaque">meu paragrafo</p>
+    <p>meu paragrafo</p>
+    <br>
+    <p>meu paragrafo</p>
+    <p>meu paragrafo</p>
+    <br>
+    <p class="destaque">meu paragrafo</p>
+    <p class="destaque">meu paragrafo</p>
+
+</div>
+
+
+
+</body>
+</html>

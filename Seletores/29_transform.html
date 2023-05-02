@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+    <style>
+        .div1 {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            transform: translate(50%, 50%);
+            /* A diferença do transform translate para o position é que o  primeiro é a largura do elemento
+        e o segundo a largura do pai */
+        }
+
+        .div2 {
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            position: relative;
+            left: 50%;
+        }
+
+        .div3 {
+            width: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .div3-interna {
+            background-color: yellow;
+            transform: translateX(100%);
+
+        }
+        .div4 {
+            width: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .div4-interna {
+            background-color: yellow;
+            transform: rotate(45deg);
+        
+      
+        }
+        .div5 {
+            width: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .div5-interna {
+            background-color: yellow;
+            transform: rotate(15deg);
+            transform-origin: left bottom;
+        text-align: center;
+      
+        
+        }
+        .div6 {
+            width: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .div6-interna {
+            background-color: yellow;
+            transform: rotate(15deg) translate(30px);
+           
+      
+        
+        }
+        .div7 {
+            width: 50%;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .div7-interna {
+            background-color: yellow;
+            transform: translate(30px) rotate(15deg) ;
+
+        }
+        .div8{
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            transform: skewx(10deg);
+        }
+        .div9{
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            transform: scale(.5) translateX(50%);
+            transition: transform .5s;
+
+        }
+        .div9:hover{
+            transform: scale(2);
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">conteudo qualquer</div>
+        <p>Sed tincidunt, purus quis hendrerit porttitor, erat eros vestibulum arcu, cursus gravida sapien mi non
+            lectus. Sed pellentesque sem vel diam placerat, eget vestibulum velit rhoncus. Donec mattis sapien quis dui
+            ultricies, vitae pellentesque leo accumsan. Sed eget ultrices est. Pellentesque pretium euismod sem quis
+            ornare. Quisque posuere et quam ut pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            felis sapien, pretium quis dolor vitae, ultricies fermentum justo. Sed bibendum, dolor quis ornare lacinia,
+            est risus tempus nisi, et mollis orci elit in dui. Etiam suscipit, leo vitae semper consequat, est quam
+            volutpat nisl, vel mollis ex tortor et felis. Suspendisse laoreet nisl nec aliquet sagittis. Praesent nisi
+            tellus, semper sed metus nec, pharetra luctus turpis. </p>
+    </div>
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">conteudo qualquer</div>
+        <p>Sed tincidunt, purus quis hendrerit porttitor, erat eros vestibulum arcu, cursus gravida sapien mi non
+            lectus. Sed pellentesque sem vel diam placerat, eget vestibulum velit rhoncus. Donec mattis sapien quis dui
+            ultricies, vitae pellentesque leo accumsan. Sed eget ultrices est. Pellentesque pretium euismod sem quis
+            ornare. Quisque posuere et quam ut pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            felis sapien, pretium quis dolor vitae, ultricies fermentum justo. Sed bibendum, dolor quis ornare lacinia,
+            est risus tempus nisi, et mollis orci elit in dui. Etiam suscipit, leo vitae semper consequat, est quam
+            volutpat nisl, vel mollis ex tortor et felis. Suspendisse laoreet nisl nec aliquet sagittis. Praesent nisi
+            tellus, semper sed metus nec, pharetra luctus turpis. </p>
+    </div>
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">conteudo qualquer</div>
+        <p>Sed tincidunt, purus quis hendrerit porttitor, erat eros vestibulum arcu, cursus gravida sapien mi non
+            lectus. Sed pellentesque sem vel diam placerat, eget vestibulum velit rhoncus. Donec mattis sapien quis dui
+            ultricies, vitae pellentesque leo accumsan. Sed eget ultrices est. Pellentesque pretium euismod sem quis
+            ornare. Quisque posuere et quam ut pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            felis sapien, pretium quis dolor vitae, ultricies fermentum justo. Sed bibendum, dolor quis ornare lacinia,
+            est risus tempus nisi, et mollis orci elit in dui. Etiam suscipit, leo vitae semper consequat, est quam
+            volutpat nisl, vel mollis ex tortor et felis. Suspendisse laoreet nisl nec aliquet sagittis. Praesent nisi
+            tellus, semper sed metus nec, pharetra luctus turpis. </p>
+    </div>
+    <hr>
+    <div class="div6">
+        <div class="div6-interna">conteudo qualquer</div>
+        <p>Sed tincidunt, purus quis hendrerit porttitor, erat eros vestibulum arcu, cursus gravida sapien mi non
+            lectus. Sed pellentesque sem vel diam placerat, eget vestibulum velit rhoncus. Donec mattis sapien quis dui
+            ultricies, vitae pellentesque leo accumsan. Sed eget ultrices est. Pellentesque pretium euismod sem quis
+            ornare. Quisque posuere et quam ut pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            felis sapien, pretium quis dolor vitae, ultricies fermentum justo. Sed bibendum, dolor quis ornare lacinia,
+            est risus tempus nisi, et mollis orci elit in dui. Etiam suscipit, leo vitae semper consequat, est quam
+            volutpat nisl, vel mollis ex tortor et felis. Suspendisse laoreet nisl nec aliquet sagittis. Praesent nisi
+            tellus, semper sed metus nec, pharetra luctus turpis. </p>
+    </div>
+    <hr>
+    <div class="div7">
+        <div class="div7-interna">conteudo qualquer</div>
+        <p>Sed tincidunt, purus quis hendrerit porttitor, erat eros vestibulum arcu, cursus gravida sapien mi non
+            lectus. Sed pellentesque sem vel diam placerat, eget vestibulum velit rhoncus. Donec mattis sapien quis dui
+            ultricies, vitae pellentesque leo accumsan. Sed eget ultrices est. Pellentesque pretium euismod sem quis
+            ornare. Quisque posuere et quam ut pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            felis sapien, pretium quis dolor vitae, ultricies fermentum justo. Sed bibendum, dolor quis ornare lacinia,
+            est risus tempus nisi, et mollis orci elit in dui. Etiam suscipit, leo vitae semper consequat, est quam
+            volutpat nisl, vel mollis ex tortor et felis. Suspendisse laoreet nisl nec aliquet sagittis. Praesent nisi
+            tellus, semper sed metus nec, pharetra luctus turpis. </p>
+    </div>
+    <hr>
+    <div class="div8">div8</div>
+    <div class="div9">div9</div>
+</body>
+
+</html>
