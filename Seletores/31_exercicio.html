@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 25px 0 0 0;
+            padding: 0;
+        }
+
+            input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+           opacity: 0;
+          
+            margin: 0;
+        } 
+input:focus + label{
+box-shadow: 0 0 0 2px red;
+            
+}
+
+
+
+        .chc3:before,
+        .chc2:before,
+        .chc:before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #bbb;
+            transition: transform .1s;
+            transform-origin: 0%;
+        }
+
+        label {
+            margin-right: 25px;
+            height: 35px;
+            width: 70px;
+            display: inline-block;
+            background: #bbb;
+            border-radius: 25px 25px;
+        }
+
+        input[type="checkbox"]:checked+label .chc:before {
+            transform: translateX(40px);
+            background-color: red;
+        }
+
+        input[type="checkbox"]:checked+label .chc2:before {
+            transform: translateX(40px);
+            background-color: red;
+        }
+
+        input[type="checkbox"]:checked+label .chc3:before {
+            transform: translateX(40px);
+            background-color: red;
+        }
+
+        /*  ganbiarra: 
+      input[type="checkbox"]:checked + label .chc{
+            width: 30px;
+            height: 30px;
+            border-radius:  50%;
+            background-color: red;
+           margin-left: 40px;
+          transform: 100%;
+
+        } */
+    </style>
+
+</head>
+
+<body>
+    <input type="checkbox" name="qualquer" id="chc">
+    <label for="chc">
+
+        <span class="chc"></span>
+        Esporte
+    </label>
+    <input type="checkbox" name="qualquer" id="chc2">
+    <label for="chc2">
+
+        <span class="chc2"></span>
+        Politica
+    </label>
+    <input type="checkbox" name="qualquer" id="chc3">
+    <label for="chc3">
+
+        <span class="chc3"></span>
+        Educação
+    </label>
+</body>
+
+</html>
