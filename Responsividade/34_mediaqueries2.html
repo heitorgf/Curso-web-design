@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Essa opção ajuda com portabilidade -->
+    <meta name="author" content="Heitor">
+    <style>
+        body {
+            background-color: gray;
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 500px) {
+            body {
+                background-color: orange;
+            }
+
+            .container div {
+                margin: 10px;
+                width: calc(50% - 20px);
+                float: left;
+
+            }
+        }
+
+        .container div {
+            background-color: #ccc;
+            margin-bottom: 15px;
+            height: 150px;
+
+        }
+
+        .container {
+            background-color: white;
+            padding: 15px;
+        }
+
+        .teste {
+            background-color: red;
+            width: 320px;
+            height: 50px;
+        }
+
+        .clearfix::after {
+            content: ' ';
+            display: block;
+            clear: both;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Exemplo de media queries</h1>
+    <p>Paragrafo qualquer</p>
+    <!--  <div class="teste"></div> -->
+    <div class="container clearfix">
+        <div>div1</div>
+        <div>div2</div>
+
+
+</body>
+
+</html>
