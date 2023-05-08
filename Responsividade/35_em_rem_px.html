@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+<style>
+    html{
+        font-size: 32px;
+    }
+    body{
+/*         font-family: sans-serif;
+        font-size: 16px; */
+        font: 16px sans-serif;
+        /* O em é relativo ao tamanho da fonte. Por exemplo: dentro do div vai ser 16px,
+        caso não tenha uma font-size dentro do div o valor vai para o pai, nesse caso o 
+        body */
+    }
+    h1{
+        text-align: center;
+    }
+    div{
+        border: 1px solid black;
+       padding: 1em; 
+
+/*         font-size: 1em; */
+        width: 320px;
+        width: 20em;
+        /* 320 / 16 */
+        margin: 100px;
+        margin: 6.25em auto;
+        /* 100 / 16 = 6.25 */
+    }
+    p{
+        margin: 0;
+        line-height: 1.5;
+        font-size: 20px;
+        font-size: 1.25em;
+        /* 16 * 1.25 = 20 */
+    }
+    a{
+        font-size: 24px;
+        font-size: 1.2em;
+        font-size: 1rem;
+        /* 24/20= 1.2 */
+        /* O elemento pai do <a> é o paragrafo então tem que ser 24/20 */
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>Unidades de medidas</h1>
+    <div>
+    <p>Nullam sed maximus ex. Curabitur non placerat erat, pharetra fermentum dolor. Fusce elementum ante eu lorem
+        euismod cursus. Donec pulvinar congue quam, non tristique eros fringilla pulvinar. Aenean accumsan mi vitae
+        magna luctus rhoncus. Cras dapibus eleifend nibh, in tempor urna molestie a. Aliquam mattis orci id tempus
+        semper. Etiam aliquet nulla eu sollicitudin iaculis. In id sapien ultrices, facilisis erat molestie, porttitor
+        sem. Phasellus sed leo eu tortor facilisis bibendum.<a href="#"> Donec ut diam sit amet nulla luctus pellentesque. Nam
+        iaculis in tellus a rutrum. Vivamus euismod metus sit amet consequat tristique.</a> Morbi in blandit ante. Aliquam
+        ante purus, ullamcorper eu bibendum et, dictum in odio. Sed finibus, tortor ac suscipit posuere, lacus lacus
+        posuere turpis, non consectetur mauris nisi at ex. </p></div>
+</body>
+
+</html>
