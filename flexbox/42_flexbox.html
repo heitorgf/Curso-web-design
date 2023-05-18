@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+<style>
+    .flexbox{
+        height: 250px;
+        border: 1px solid red;
+        display: flex;
+
+        margin-bottom: 15px;
+    }
+    .flexbox div{
+        background-color: orange;
+        width: 300px;
+        margin: 15px;
+    }
+    .flexbox:nth-child(4){
+/*         flex-direction: row;
+        flex-wrap: wrap; */
+        flex-flow: row nowrap;
+    }
+    .flexbox:nth-child(5){
+        justify-content:space-evenly ; 
+    }
+    .flexbox:nth-child(6) div{
+        width: 20px;
+    }
+    .flexbox:nth-child(6){
+       align-items: center;
+       justify-content: center;
+    }
+    .flexbox:nth-child(7){
+       align-items: baseline;
+       justify-content: center;
+    }
+    .flexbox:nth-child(8){
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .flexbox:nth-child(8) div{
+    width: 100px;
+
+    }
+    .flexbox:nth-child(9){
+        justify-content: center;
+        align-items: center;;
+    }
+    .flexbox:nth-child(9) div{
+    background-color: yellow;
+flex-basis: 100px;
+height: 50px;
+    }
+    .flexbox:nth-child(10){
+        justify-content: center;
+        align-items: center;;
+    }
+    .flexbox:nth-child(10) div{
+    background-color: yellow;
+flex-basis: 30px;
+height: 50px;
+    }
+    .flexbox:nth-child(10) div:nth-child(2){
+        /* flex grow vai pegar todo espaço sobrando e colocar na segunda criaça */
+        flex-grow: 1;
+    }
+    .flexbox:nth-child(10) div:nth-child(4){
+        /* flex grow vai pegar todo espaço sobrando e colocar na quarta criaça */
+        flex-grow: 1;
+    }
+
+    .flexbox:nth-child(11) div{
+    background-color: yellow;
+flex-basis: 100px;
+height: 50px;
+    }
+    .flexbox:nth-child(11) div:nth-child(2){
+        /* flex shrink vai diminuir todo espaço sobrando segunda criaça */
+        flex-shrink: 2;
+    }
+    .flexbox:nth-child(11) div:nth-child(4){
+        /* flex shrink vai diminuir todo espaço sobrando quarta criaça */
+        flex-shrink: 2;
+    }
+    .flexbox:nth-child(12) div:nth-child(2){
+        order: 3;
+    }
+    .flexbox:nth-child(12) div:nth-child(4){
+        order: 2;
+    }
+
+    .flexbox:nth-child(12) div:nth-child(3){
+        order: 4;
+    }
+    
+    .flexbox:nth-child(13){
+        align-items: flex-start;
+    }
+    .flexbox:nth-child(13) div:nth-child(2){
+        align-items: flex-start;
+        align-self: flex-end;
+    }
+    .flexbox:nth-child(13) div:nth-child(3){
+        align-items: flex-start;
+        align-self: center;
+    }
+    .flexbox:nth-child(13) div:nth-child(1){
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    .flexbox:nth-child(14) div{
+        flex-basis: 60px;
+        /* O flex basis é a largarua se for row e a altura se for colum */
+    }
+    .flexbox:nth-child(14){
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        height: 500px;
+    }
+</style>
+
+</head>
+
+<body>
+    <h2>Display flex</h2>
+    <p>Acomodar ou distribuir elementos de modo fácil</p>
+    <p>Ajuda a centralziar na vertical</p>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2" style="font-size: 2em;">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox">
+        <!-- Flex container é o elemento que recebe  o display: flex; e os filhos são display items -->
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+
+</html>
