@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+<style>
+    body{
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+    .monitor{
+        text-align: right;
+        height: 40px;
+        width: 98%;
+        font-size: 40px;
+    }
+    .div-monitor{
+        padding: 1.06em;
+       
+       /*  padding-bottom: 1.06em; */
+    }
+    .calculadora{
+        height: 400px;
+        width: 300px;
+        background-color: blueviolet;
+        margin: 30px auto;
+    }
+    .gridContainer{
+        padding: 25px;
+        background-color: orange;
+        display: grid;
+        grid-gap: 10px;
+        /* repeat(3, [col-start] 1fr [col-end]) */
+        grid-template-columns: repeat(4,[col-start] 1fr [col-end]);
+        grid-template-rows:[linha1-start] 50px [linha1-end linha2-start] 50px[linha2-end linha3-start] 50px[linha3-end linha4-start] 50px[linha4-end linha5-start] 50px[linha5-end];
+        grid-template-areas: "linha1 linha1 linha1 linha1"
+                             "linha2 linha2 linha2 linha2"
+                             "linha3 linha3 linha3 linha3"
+                             "linha4 linha4 linha4 linha4"
+                             "linha5 linha5 linha5 linha5";
+    }
+
+/*      AC % X /
+        7  8 9 =
+        4  5 6 -
+        1  2 3 +
+        0  0 , +         */
+    .linha1{
+      
+     /*    grid-row: ; */
+    }
+    .linha2{
+    
+     /*    grid-row: ; */
+    }
+
+    .linha3{
+      /*   grid-column: ;
+        grid-row: ; */
+    }
+    .mais{
+        grid-column:col-start 4/ col-end 4; 
+        grid-row: linha4-start/linha5-end;
+    }
+    .zero{
+       grid-column: col-start 1/col-end 2;
+    }
+</style>
+
+</head>
+<body>
+ <!--   AC % X /
+        7  8 9 =
+        4  5 6 -
+        1  2 3 +
+        0  0 , +        -->
+        <div class="calculadora">
+    <div class="div-monitor">
+   <input type="name" placeholder="0" class="monitor">
+</div>
+<div class="gridContainer">
+    <input type="button" value="AC" class="linha1 gridItem">
+    <input type="button" value="%" class="linha1 gridItem">
+    <input type="button" value="X" class="linha1  gridItemgridItem">
+    <input type="button" value=" /" class="linha1 gridItem">
+    
+    <input type="button" value="7" class="linha2 gridItem">
+    <input type="button" value="8" class="linha2 gridItem">
+    <input type="button" value="9" class="linha2 gridItem">
+    <input type="button" value="=" class="linha2 gridItem">
+
+    <input type="button" value="4" class="linha3 gridItem">
+    <input type="button" value="5" class="linha3 gridItem">
+    <input type="button" value="6" class="linha3 gridItem">
+    <input type="button" value="-" class="linha3 gridItem">
+
+    <input type="button" value="1" class="linha4 gridItem">
+    <input type="button" value="2" class="linha4 gridItem">
+    <input type="button" value="3" class="linha4 gridItem">
+    <input type="button" value="+" class="mais linha4 gridItem">
+    
+    <input type="button" value="0" class="zero linha5 gridItem">
+    <input type="button" value="," class="linha5 gridItem">
+</div>
+</div>
+</body>
+</html>
