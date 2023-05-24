@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderiada-->
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heitor">
+    <style>
+        @keyframes andar {
+            0% {
+                transform: translateX(0);
+                background-color: blue;
+            }
+            20%, 40%{
+                height: 100px;
+            }
+        
+
+            100% {
+                transform: translateX(300px);
+                background-color: blueviolet;
+            }
+        }
+
+        #anime {
+            background-color: gray;
+            width: 380px;
+        }
+
+        body {
+            font-family: sans-serif;
+            text-align: center;
+
+
+        }
+
+        #anime div {
+            padding-top: 25px;
+            width: 75px;
+            height: 50px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+
+        }
+
+        #anime div:nth-child(1) {
+            animation-name: andar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        #anime div:nth-child(2) {
+            animation-name: andar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+   /*          animation: anda 2s ease-in-out infinite alternate; */
+        }
+
+        #anime div:nth-child(3) {
+            animation-name: andar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+/*             animation: anda 2s ease-in-out infinite alternate; */
+        }
+        #anime div:nth-child(4) {
+            background-color: red;
+            animation-name: andar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1.5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+           animation-fill-mode: backwards;
+/*             animation: anda 2s ease-in-out infinite alternate; */
+        }
+        #anime div:nth-child(5) {
+            background-color: red;
+            animation-name: andar;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+/*             animation: anda 2s ease-in-out infinite alternate; */
+        }
+        #anime div:nth-child(5):hover { 
+            animation-play-state: paused;
+/*             animation: anda 2s ease-in-out infinite alternate; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Animation</h1>
+    <p><code>Ordem para simplificaçõa: name duration timing-function delatiration-count diration fill-mode play-state</code></p>
+    <div id="anime">
+        <div class="dvi1">1</div>
+        <div class="dvi2">2</div>
+        <div class="dvi3">3</div>
+        <div class="dvi4">4</div>
+        <div class="dvi5">5</div>
+    </div>
+</body>
+
+</html>
